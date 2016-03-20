@@ -7,12 +7,12 @@ A simple web mvc framework.
 
 ``` xml
 <filter>
-        <filter-name>hongmvc</filter-name>
-        <filter-class>cn.smallyard.hongmvc.DispatchFilter</filter-class>
+    <filter-name>hongmvc</filter-name>
+    <filter-class>cn.smallyard.hongmvc.DispatchFilter</filter-class>
 </filter>
 <filter-mapping>
-        <filter-name>hongmvc</filter-name>
-        <url-pattern>*</url-pattern>
+    <filter-name>hongmvc</filter-name>
+    <url-pattern>*</url-pattern>
 </filter-mapping>
 ```
 
@@ -26,10 +26,9 @@ hongmvc.scan.packages = cn
 
 ```java
 public class IndexController {
-
     @RequestMapping("/")
     public String index() {
-        return "index";
+        return "index"; //jsp
     }
 }
 ```
